@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:w-1/4">
             <Link to={"/"}>
-              <img className="h-14 mb-4 bg-white p-2 rounded-lg" src={logo} alt="LumiGrid logo" />
+              <img className="h-20 mb-4 bg-white p-2 rounded-lg" src={logo} alt="Justlink Logo" />
             </Link>
             <p className="text-white text-sm leading-relaxed">
               JustLink Logistics Limited delivers fast, affordable, and reliable services that simplify trade, expand market access, and support economic competitiveness.
@@ -29,31 +29,31 @@ const Footer = () => {
             {/* <p className="text-white text-sm">
               📍 B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja,
               Nigeria
-            </p>
-            <a href="mailto:info@muuvilitylogisticsltd.com">
+            </p> */}
+            <a href="mailto:Info@justlinklogistics.com.ng">
               <p className="text-white text-sm mt-2">
-                📧 info@muuvilitylogistics.com
+                📧 Info@justlinklogistics.com.ng
               </p>
             </a>
-            <a href="mailto:muuvylitylogisticsltd825@gmail.com">
+            <a href="mailto:Support@justlinklogistics.com.ng">
               <p className="text-white text-sm mt-2">
-                📧 imuuvylitylogisticsltd825@gmail.com
+                📧 Support@justlinklogistics.com.ng
               </p>
             </a>
-            <a href="tel:+2349091112210">
+            <a href="tel:+2348168546166">
               <p className="flex items-center gap-3 text-white mt-2">
                 <MdPhone className="text-white text-sm" />
-                <span> +234-909-111-2210
+                <span> +234-816-854-6166
                 </span>
               </p>
             </a>
-            <a href="tel:+2348163647971">
+            <a href="tel:+2349133286601">
               <p className="flex items-center gap-3 text-white">
                 <MdPhone className="text-white text-sm" />
-                <span> +234-816-364-7971
+                <span> +234-913-328-6601
                 </span>
               </p>
-            </a> */}
+            </a>
           </div>
 
 

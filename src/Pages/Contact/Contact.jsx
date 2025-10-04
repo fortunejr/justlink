@@ -58,31 +58,29 @@ const Contact = () => {
                     <strong>Address:</strong> B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja, Nigeria
                   </span> */}
                 </p>
-              {/* <a href="mailto:info@omphoenixlimited.com.ng"> */}
                 <p className="flex items-center gap-3">
                   <MdEmail className="text-customBlue text-xl gap-4" />
-                  {/* <span>
-                    <p><a href="mailto:info@muuvilitylogisticsltd.com"><strong>Email:</strong> info@muuvilitylogisticsltd.com</a></p>
-                    <p><a href="mailto:muuvylitylogisticsltd825@gmail.com"><strong>Email:</strong> imuuvylitylogisticsltd825@gmail.com</a></p>
-                  </span> */}
+                  <span>
+                    <p><a href="mailto:Info@justlinklogistics.com.ng"><strong>Email:</strong> Info@justlinklogistics.com.ng</a></p>
+                    <p><a href="mailto:Support@justlinklogistics.com.ng"><strong>Email:</strong> Support@justlinklogistics.com.ng</a></p>
+                  </span>
                 </p>
-              {/* </a> */}
-              {/* <a href="tel:+2349091112210"> */}
+              <a href="tel:+2348168546166">
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
-                  {/* <span>
-                    <strong>Phone:</strong> +234-909-111-2210
-                  </span> */}
+                  <span>
+                    <strong>Phone:</strong> +234-816-854-6166
+                  </span>
                 </p>
-              {/* </a> */}
-              {/* <a href="tel:+2348163647971"> */}
+              </a>
+              <a href="tel:+2349133286601">
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
-                  {/* <span>
-                    <strong>Phone:</strong> +234-816-364-7971
-                  </span> */}
+                  <span>
+                    <strong>Phone:</strong> +234-913-328-6601
+                  </span>
                 </p>
-              {/* </a> */}
+              </a>
             </div>
           </div>
 
