@@ -50,17 +50,7 @@ const Contact = () => {
               methods below or fill out the form.
             </p>
             <div className="space-y-4 flex flex-col text-gray-800 text-sm">
-              {/* <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!4v1755958888439!6m8!1m7!1sGxBfeXwJPVOXsq1t1D71Ng!2m2!1d5.567936549623464!2d5.79700192865511!3f208.2!4f0!5f0.7820865974627469"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div> */}
+              
 
                 <p className="flex items-center gap-3">
                   <MdLocationOn className="text-customBlue lg:text-xl text-4xl" />
@@ -68,7 +58,7 @@ const Contact = () => {
                     <strong>Address:</strong> B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja, Nigeria
                   </span> */}
                 </p>
-              <a href="mailto:info@omphoenixlimited.com.ng">
+              {/* <a href="mailto:info@omphoenixlimited.com.ng"> */}
                 <p className="flex items-center gap-3">
                   <MdEmail className="text-customBlue text-xl gap-4" />
                   {/* <span>
@@ -76,23 +66,23 @@ const Contact = () => {
                     <p><a href="mailto:muuvylitylogisticsltd825@gmail.com"><strong>Email:</strong> imuuvylitylogisticsltd825@gmail.com</a></p>
                   </span> */}
                 </p>
-              </a>
-              <a href="tel:+2349091112210">
+              {/* </a> */}
+              {/* <a href="tel:+2349091112210"> */}
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
                   {/* <span>
                     <strong>Phone:</strong> +234-909-111-2210
                   </span> */}
                 </p>
-              </a>
-              <a href="tel:+2348163647971">
+              {/* </a> */}
+              {/* <a href="tel:+2348163647971"> */}
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
                   {/* <span>
                     <strong>Phone:</strong> +234-816-364-7971
                   </span> */}
                 </p>
-              </a>
+              {/* </a> */}
             </div>
           </div>
 
@@ -138,7 +128,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
                 ></textarea>
               </div>
-              <button className="bg-customRed text-white font-bold px-6 py-3 rounded-xl hover:bg-red-700 transition-all">
+              <button className="bg-green-700 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-900 transition-all">
                 Send Message
               </button>
             </form>
