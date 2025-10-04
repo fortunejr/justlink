@@ -29,31 +29,31 @@ const Footer = () => {
             {/* <p className="text-white text-sm">
               📍 B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja,
               Nigeria
-            </p> */}
+            </p>
             <a href="mailto:info@muuvilitylogisticsltd.com">
-              {/* <p className="text-white text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 📧 info@muuvilitylogistics.com
-              </p> */}
+              </p>
             </a>
             <a href="mailto:muuvylitylogisticsltd825@gmail.com">
-              {/* <p className="text-white text-sm mt-2">
+              <p className="text-white text-sm mt-2">
                 📧 imuuvylitylogisticsltd825@gmail.com
-              </p> */}
+              </p>
             </a>
             <a href="tel:+2349091112210">
               <p className="flex items-center gap-3 text-white mt-2">
                 <MdPhone className="text-white text-sm" />
-                {/* <span> +234-909-111-2210
-                </span> */}
+                <span> +234-909-111-2210
+                </span>
               </p>
             </a>
             <a href="tel:+2348163647971">
               <p className="flex items-center gap-3 text-white">
                 <MdPhone className="text-white text-sm" />
-                {/* <span> +234-816-364-7971
-                </span> */}
+                <span> +234-816-364-7971
+                </span>
               </p>
-            </a>
+            </a> */}
           </div>
 
 

@@ -21,11 +21,15 @@ const DeliveryAnimations = () => {
             autoPlay
             loop
             muted
+            playsInline
+            preload="auto"
             className="w-50 h-50"
           >
             <source src={video.src} type="video/mp4" />
           </video>
-          <p className="mt-3 text-black text-l md:text-base px-10">{video.caption}</p>
+          <p className="mt-3 text-black text-l md:text-base px-10">
+            {video.caption}
+          </p>
         </div>
       ))}
     </div>
