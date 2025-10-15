@@ -8,6 +8,7 @@ import Services from './Pages/Services/Services'
 import WhyChooseUs from './Pages/WhyChooseUs/WhyChooseUs'
 import Contact from './Pages/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import ComingSoon from './Pages/ComingSoon'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path = "/services"  element = {<Services />}/>
         <Route path = "/why-choose-us"  element = {<WhyChooseUs />}/>
         <Route path = "/contact"  element = {<Contact />}/>
+        <Route path = "/coming-soon"  element = {<ComingSoon />}/>
         </Routes>
       <Footer />
     </>

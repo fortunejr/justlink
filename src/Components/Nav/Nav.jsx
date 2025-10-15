@@ -4,13 +4,13 @@ import { IoIosMenu } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { logo } from "../../imports";
 import { motion, AnimatePresence } from "framer-motion";
-import './Nav.css'
+import "./Nav.css";
 
 const Nav = () => {
   const menuItems = [
     { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
-    { name: "Why choose Us", link: "/why-choose-us" },
+    { name: "Why Choose Us", link: "/why-choose-us" },
     { name: "Contact", link: "/contact" },
   ];
 
@@ -32,41 +32,37 @@ const Nav = () => {
         setOpen(false);
       }
     };
-    if (open) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    if (open) document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
 
   const dropdownVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-    exit: { opacity: 0, y: -20, transition: { duration: 0.3 } },
+    hidden: { opacity: 0, y: -10 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" } },
+    exit: { opacity: 0, y: -10, transition: { duration: 0.25, ease: "easeIn" } },
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
-      {/* Background layering just like Herosection */}
-      <div className="absolute inset-0 bg-white"></div>
-      <div className="absolute inset-0 bg-green-700/10"></div>
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm shadow-sm border-b border-green-100">
+      {/* Background Layers */}
+      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="absolute inset-0 bg-green-700/5"></div>
 
-      {/* inner container */}
-      <div className="relative container mx-auto px-9 py-4 flex items-center justify-between">
+      {/* Inner Container */}
+      <div className="relative container mx-auto px-7 lg:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/">
-          <img className="lg:h-12 h-14" src={logo} alt="logo" />
+        <Link to="/" className="flex items-center gap-2">
+          <img className="h-10 lg:h-12 object-contain" src={logo} alt="logo" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-12 cursor-pointer">
+        <div className="hidden lg:flex items-center gap-10">
           {menuItems.map((menu) =>
             menu.link.includes("#") ? (
               <a
                 key={menu.name}
                 href={menu.link}
-                className="hover:text-yellow-300 transition uppercase font-bold"
+                className="text-gray-700 font-semibold uppercase tracking-wide hover:text-green-700 transition-colors duration-300"
               >
                 {menu.name}
               </a>
@@ -74,7 +70,9 @@ const Nav = () => {
               <Link
                 key={menu.name}
                 to={menu.link}
-                className="hover:text-yellow-600 transition uppercase font-bold"
+                className={`text-gray-700 font-semibold uppercase tracking-wide hover:text-green-700 transition-colors duration-300 ${
+                  location.pathname === menu.link ? "text-green-700 border-b-2 border-green-700 pb-1" : ""
+                }`}
               >
                 {menu.name}
               </Link>
@@ -85,9 +83,9 @@ const Nav = () => {
         {/* Mobile Menu Icon */}
         <div className="lg:hidden" onClick={toggle}>
           {open ? (
-            <IoClose size={36} className="cursor-pointer" />
+            <IoClose size={34} className="cursor-pointer text-green-700 transition-transform duration-200" />
           ) : (
-            <IoIosMenu size={36} className="cursor-pointer" />
+            <IoIosMenu size={34} className="cursor-pointer text-green-700 transition-transform duration-200" />
           )}
         </div>
       </div>
@@ -101,14 +99,14 @@ const Nav = () => {
             animate="visible"
             exit="exit"
             variants={dropdownVariants}
-            className="relative lg:hidden  bg-green-100 flex flex-col gap-5 py-5 px-9"
+            className="relative lg:hidden bg-green-50 flex flex-col gap-5 py-5 px-8 border-t border-green-200 shadow-md"
           >
             {menuItems.map((menu) =>
               menu.link.includes("#") ? (
                 <a
                   key={menu.name}
                   href={menu.link}
-                  className="hover:text-yellow-300 transition uppercase"
+                  className="text-gray-800 uppercase font-semibold hover:text-green-700 transition-colors duration-300"
                 >
                   {menu.name}
                 </a>
@@ -116,7 +114,9 @@ const Nav = () => {
                 <Link
                   key={menu.name}
                   to={menu.link}
-                  className="hover:text-yellow-700 transition uppercase"
+                  className={`text-gray-800 uppercase font-semibold hover:text-green-700 transition-colors duration-300 ${
+                    location.pathname === menu.link ? "text-green-700" : ""
+                  }`}
                 >
                   {menu.name}
                 </Link>
