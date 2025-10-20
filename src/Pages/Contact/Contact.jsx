@@ -50,22 +50,37 @@ const Contact = () => {
               methods below or fill out the form.
             </p>
             <div className="space-y-4 flex flex-col text-gray-800 text-sm">
-              
+              <p className="flex items-center gap-3">
+                <MdLocationOn className="text-customBlue lg:text-xl text-4xl" />
+                <span>
+                  <strong>Address:</strong> 16 Femidaramola Street Cele Egbe bus
+                  stop Lagos Nigeria
+                </span>
+              </p>
+              <p className="flex items-center gap-3">
+                <MdEmail className="text-customBlue text-xl gap-4" />
+                <span>
+                  <p>
+                    <a href="mailto:Info@justlinklogistics.com.ng">
+                      <strong>Email:</strong> Info@justlinklogistics.com.ng
+                    </a>
+                  </p>
+                  <p>
+                    <a href="mailto:Support@justlinklogistics.com.ng">
+                      <strong>Email:</strong> Support@justlinklogistics.com.ng
+                    </a>
+                  </p>
+                </span>
+              </p>
 
-                <p className="flex items-center gap-3">
-                  <MdLocationOn className="text-customBlue lg:text-xl text-4xl" />
-                  {/* <span>
-                    <strong>Address:</strong> B46 Marcus Gundiri Street, Sunshine Estate, Gwarimpa,FCT-Abuja, Nigeria
-                  </span> */}
-                </p>
-                <p className="flex items-center gap-3">
-                  <MdEmail className="text-customBlue text-xl gap-4" />
-                  <span>
-                    <p><a href="mailto:Info@justlinklogistics.com.ng"><strong>Email:</strong> Info@justlinklogistics.com.ng</a></p>
-                    <p><a href="mailto:Support@justlinklogistics.com.ng"><strong>Email:</strong> Support@justlinklogistics.com.ng</a></p>
-                  </span>
-                </p>
-              <a href="tel:+2348168546166">
+              <p className="text-green-700 font-bold text-lg">
+                Click any of the phone numbers to chat directly on WhatsApp
+              </p>
+              <a
+                href="https://wa.me/2348168546166"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
                   <span>
@@ -73,7 +88,12 @@ const Contact = () => {
                   </span>
                 </p>
               </a>
-              <a href="tel:+2349133286601">
+
+              <a
+                href="https://wa.me/2349133286601"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p className="flex items-center gap-3">
                   <MdPhone className="text-customBlue text-xl" />
                   <span>
